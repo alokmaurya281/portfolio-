@@ -1,0 +1,435 @@
+
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+    background-color: rgba(0, 218, 84, 0.271);
+}
+.header{
+    display: flex;
+}
+
+.navbar {
+  display: flex;
+  background-color: blueviolet;
+  height:70px;
+  width: 100vw;
+  justify-content: space-between;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.navbar-brand h1 {
+  font-family: cursive;
+  font-weight: 700;
+  color: white;
+}
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+.nav-item {
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+}
+.nav-item img {
+  padding-top: 0px;
+  padding-right: 20px;
+  padding-left: 20px;
+  align-content: center;
+}
+.nav-item img:hover{
+    transform: scale(1.5);
+    transition: .5s;
+}
+.nav-item a {
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+.nav-item a:hover{
+    color: aqua;
+    transition: .5s;
+    transform: scale(1.5);
+    font-weight: bolder;
+}
+
+.hero-section{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    
+}
+.hero-text{
+    margin: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.hero-text h3{
+    margin-bottom: 40px;
+    font-size: 28px;
+    text-align: justify;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+.hero-text p{
+    margin-bottom: 40px;
+    font-size: 22px;
+    text-align: justify;
+    font-weight: 400;
+    font-family: monospace;
+
+}
+.social-links{
+    display: flex;
+    flex-direction: row;
+}
+.social-menu{
+    display: flex;
+    flex-direction: row;
+}
+.social-menu-link{
+    list-style: none;
+    padding: 20px;
+
+}
+.social-menu-link a{
+    color: rgb(32, 5, 102);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.social-menu-link img{
+    border:  5px solid rgba(0, 218, 84, 0.029);
+    border-radius: 50%;
+    padding: 0 10px;
+}
+.social-menu-link img:hover{
+    
+    transition: .5s;
+    transform: scale(3);
+}
+.social-menu-link a:hover{
+    color: rgb(32, 5, 102);
+    transition: .5s;
+    transform: scale(3);
+}
+.hero-image{
+    margin: auto;
+    border: 20px solid rgba(0, 218, 84, 0.029);
+    border-radius: 50%;
+    
+}
+.hero-image img{
+    width: 48vw;
+    border-radius: 10px;
+
+}
+.hero-image img:hover{
+    transition: .5s;
+    border: 2px solid rgba(81, 128, 0, 0.819);
+    transform:scale(1.1)
+    
+    
+}
+.resume-btn{
+    margin: 20px;
+    padding: 10px;
+    width: 130px;
+    height:40px;
+    border-radius: 5px;
+    background-color: rgb(196, 35, 228);
+}
+.resume-btn a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+.resume-btn:hover{
+    background-color: green;
+    transition: .5s;
+    transform: scale(1.5);
+}
+.resume-btn a:hover{
+    color: bisque;
+}
+
+.about-main{
+    padding: 20px;
+    background-color: rgba(6, 116, 233, 0.18);
+}
+.about{  
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.about-title{
+    margin: 10px;
+    font-size: 33px;
+    font-weight: 700;
+}
+.about-text{
+    font-size: 22px;
+    font-weight: 400;
+}
+.tech-about{
+    display: flex;
+}
+.about-full-image{
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+    height: 70vh;
+    
+}
+.about-new{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.tech-title{
+    margin: 20px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 25px;
+}
+.about-images-icons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.about-icon-image{
+    border-radius: 50%;
+    /* border: 5px solid rgba(0, 218, 84, 0.271); */
+    height: 100px;
+    padding: 10px;
+}
+.about-icon-image:hover{
+    transform: scale(1.2);
+    transition: .5s;
+    
+}
+.about-items{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.about-item-text{
+    margin: 20px;
+}
+.span1{
+    color: rgb(0, 154, 0);
+
+}
+.cloud{
+    padding: 20px;
+    background-color: rgba(241, 16, 16, 0.4)
+}
+.cloud-image{
+    border-radius: 10px;
+}
+.cloud-image:hover{
+    transition: .5s;
+    border: 2px solid rgba(81, 128, 0, 0.819);
+    transform:scale(1.1)
+
+}
+.about-full-image:hover{
+        transition: .5s;
+        border: 2px solid rgba(81, 128, 0, 0.819);
+        transform:scale(1.1)    
+}
+
+.education{
+    padding: 20px;
+    background-color: rgba(56, 225, 0, 0.5);
+
+}
+.certificates{
+    background-color: rgba(28, 0, 139, 0.385);
+}
+.projects{
+    background-color: rgba(255, 140, 0, 0.452);
+}
+.head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: justify;
+}
+.edu_image{
+    align-items: center;
+    margin-right: 10px;
+    width: 40px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+.text_head{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+.education_card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    margin: 20px;
+    padding: 30px;
+    background-color: white;
+    width:25vw;
+    height: 50vh;
+    border-radius: 10px;
+    border: 5px solid springgreen;
+}
+.card:hover{
+    background-color: black;
+    color: wheat;
+    transform: scale(1.1);
+    transition: .5s;
+}
+.education-container{
+    margin: 100px;
+}
+.certificate-container{
+    margin: 100px;
+}
+.project-conatiner{
+    margin: 100px;
+}
+.card_head{
+    text-align: justify;
+    color: cornflowerblue;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 10px;
+
+}
+.card-text{
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.list{
+    font-size: small;
+    margin-left: 40px;
+}
+.text-1{
+    padding: 5px;
+    background-color: rgb(24, 96, 229);
+    align-items: center;
+    border-radius: 10px;
+    font-size: medium;
+    font-weight: bold;
+}
+.cert-btn{
+    background-color: rgba(87, 224, 41, 0.858);
+    border-radius: 5px;
+    height: 6vh;
+    width: 9vw;
+
+}
+.cert-btn a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+.cert-btn a:hover{
+    color: chartreuse;
+
+}
+.cert-btn:hover{
+    background-color: crimson;
+    transition: .5s;
+    transform: scale(1.1);
+}
+.footer{
+    background-color: rgba(6, 98, 172, 0.793);
+}
+.footer-text{
+    color: white;
+    margin: 80px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.footer-text h2{
+    font-size: 25px;
+    font-weight: 600;
+    padding: 10px;
+}
+.footer-text h4{
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px;
+
+}
+.footer-text p{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px;
+}
+.location-btn{
+   margin: 20px;
+}
+.footermain{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.image-profile{
+    margin: 80px;
+}
+.image-profile img{
+    height: 50vh;
+    border-radius: 50%;
+}
+.image-profile img:hover{
+    transform: scale(1.2);
+    transition: .5s;
+    border: 5px solid rgba(24, 239, 27, 0.388);
+}

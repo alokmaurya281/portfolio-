@@ -1,0 +1,120 @@
+@media screen and (max-width:900px)  {
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .navbar-brand
+    {
+        display: flex;
+    }
+    .toggle-button {
+        display: flex;
+    }
+    .nav-menu{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+    .nav-menu.active{
+        display: flex;
+    }
+    
+    
+}
+@media screen and (max-width:900px){
+    .hero-section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+    .hero-text{
+        margin: 40px 30px;
+        padding: 5px;
+    }
+    /* .hero-text h3{
+        font-size: 25px;
+    }
+    .hero-text p{
+        font-size: 16px;
+    } */
+    .social-menu{
+        flex-wrap: wrap;
+    }
+    .hero-image img{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:900px) {
+    .about-main{
+        padding: 10px;
+        width: 100%;
+    }
+    .about{
+        margin: 10px;
+    }
+    .tech-about{
+        flex-direction: column;
+    }
+    .about-full-image{
+        margin: 0px;
+        padding: 0;
+        height: auto;
+        width: 100%;
+    }
+    .about-icon-image{
+        height: 80px;
+    }
+    
+}
+@media screen and (max-width:900px) {
+    .education{
+        padding: 10px;
+        width: 100%;
+    }
+    .education-container{
+
+        margin: 20px;
+        
+    }
+    .certificate-container{
+        margin: 20px;
+    
+    }
+    .project-container{
+        margin: 20px;
+    }
+    .card{
+        margin: 20px;
+        height: auto;
+        width: auto;
+    }
+    .education-card{
+        flex-direction: column;
+    }
+    .cert-btn{
+        width: 20vw;
+    }
+    
+}
+@media screen and (max-width:800px) {
+    .footer{
+        width: 100%;
+    }
+    .footermain{
+        padding: 10px;
+        flex-direction: column;
+        width: 100%;
+    }
+    .footer-text{
+        margin: 20px;
+    }
+    .image-profile{
+        margin: 20px;
+    }
+
+    
+}
