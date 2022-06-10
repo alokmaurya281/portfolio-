@@ -11,13 +11,7 @@ import Certificates from './components/Certificates';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
 // if you're using a bundler, first import:
-import Headroom from "headroom.js";
-// grab an element
-var myElement = document.querySelector("header");
-// construct an instance of Headroom, passing the element
-var headroom  = new Headroom(myElement);
-// initialise
-headroom.init();
+
 
 
 function App() {
@@ -25,12 +19,7 @@ function App() {
   //     let headroom= new Headroom(header);
   //   // let headroom= new Headroom(header,{tolerance:{down:5,up:25}});
   //   headroom.init();
-    const toggleButton = document.getElementsByClassName("toggle-button")[0];
-    const navbarLinks = document.getElementsByClassName("nav-menu")[0];
 
-    toggleButton.addEventListener("click", () => {
-      navbarLinks.classList.toggle("active");
-    });
   return (
     <div className="App">
       <Navbar/>
