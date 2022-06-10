@@ -3,6 +3,11 @@ import linkedinicon from "../images/icons/linkedin.svg";
 import githubicon from "../images/icons/github.svg";
 import twittericon from "../images/icons/twitter.svg";
 import facebookicon from "../images/icons/facebook.svg";
+import Headroom from "headroom.js"
+let header = document.querySelector('header');
+      let headroom= new Headroom(header);
+    // let headroom= new Headroom(header,{tolerance:{down:5,up:25}});
+    headroom.init();
 
 const toogle=()=>{
     const btn=document.getElementById("menu");
