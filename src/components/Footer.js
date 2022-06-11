@@ -20,22 +20,22 @@ const Footer = () => {
     <div className="social-links">
       <ul className="social-menu">
         <li className="social-menu-link">
-          <a href="www.facebook.com"
+          <a href="https://www.facebook.com/alok7071"
             ><img src={facebookicon} alt="" /></a
           >
         </li>
         <li className="social-menu-link">
-          <a href="www.twitter.com"
+          <a href="https://www.twitter.com/its_alok__m"
             ><img src={twittericon} alt="" /></a
           >
         </li>
         <li className="social-menu-link">
-          <a href="www.github.com"
+          <a href="https://github.com/alokmaurya281/"
             ><img src={githubicon} alt="" /></a
           >
         </li>
         <li className="social-menu-link">
-          <a href="www.linkedin.com"
+          <a href="https://www.linkedin.com/in/alok-maurya-1437481b3/"
             ><img src={linkedinicon} alt="" /></a
           >
         </li>
